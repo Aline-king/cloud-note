@@ -2,14 +2,16 @@
 
 * [前言](README.md)
 
-## 存储知识介绍
+## 存储发展历史
 
-* [存储类型](cun-chu-zhi-shi-jie-shao/cun-chu-lei-xing/README.md)
-  * [块存储](cun-chu-zhi-shi-jie-shao/cun-chu-lei-xing/kuai-cun-chu.md)
-  * [文件系统存储](cun-chu-zhi-shi-jie-shao/cun-chu-lei-xing/wen-jian-xi-tong-cun-chu.md)
-  * [对象存储](cun-chu-zhi-shi-jie-shao/cun-chu-lei-xing/dui-xiang-cun-chu.md)
-  * [分布式存储](cun-chu-zhi-shi-jie-shao/cun-chu-lei-xing/fen-bu-shi-cun-chu.md)
-* [存储发展](cun-chu-zhi-shi-jie-shao/cun-chu-fa-zhan.md)
+* [Linux 开源存储](cun-chu-fa-zhan-li-shi/linux-kai-yuan-cun-chu/README.md)
+  * [为什么需要开源存储](cun-chu-fa-zhan-li-shi/linux-kai-yuan-cun-chu/wei-shen-me-xu-yao-kai-yuan-cun-chu.md)
+* [存储类型](cun-chu-fa-zhan-li-shi/cun-chu-lei-xing/README.md)
+  * [块存储](cun-chu-fa-zhan-li-shi/cun-chu-lei-xing/kuai-cun-chu.md)
+  * [文件系统存储](cun-chu-fa-zhan-li-shi/cun-chu-lei-xing/wen-jian-xi-tong-cun-chu.md)
+  * [对象存储](cun-chu-fa-zhan-li-shi/cun-chu-lei-xing/dui-xiang-cun-chu.md)
+  * [分布式存储](cun-chu-fa-zhan-li-shi/cun-chu-lei-xing/fen-bu-shi-cun-chu.md)
+* [存储发展](cun-chu-fa-zhan-li-shi/cun-chu-fa-zhan.md)
 
 ## ceph
 
