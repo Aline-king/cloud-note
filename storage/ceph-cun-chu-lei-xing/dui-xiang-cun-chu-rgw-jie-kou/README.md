@@ -1,6 +1,6 @@
-# Ceph对象存储 RGW接口
+# 对象存储 RGW接口
 
-## 简介
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCciQTOc6CLGkCYciwhF1%2Fuploads%2FEsGRiQBkBbHv0uNyJ2k3%2Fimage.png?alt=media&#x26;token=3dc28202-976e-4278-93c5-4f0742712e9e" alt=""><figcaption></figcaption></figure>
 
 Ceph对象存储使用Ceph对象网关守护进程（RADOS gw），它是用于与Ceph存储群集进行交互的HTTP服务器。
 

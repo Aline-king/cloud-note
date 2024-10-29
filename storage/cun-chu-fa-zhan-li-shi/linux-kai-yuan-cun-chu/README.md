@@ -13,7 +13,7 @@
 
 为了更好地说明存储的重要性，先回顾一下经典的存储级别图，如 图1-1所示。数据在计算机系统中的存储级别自上而下地划分为4大块： CPU、CPU缓存、易失内存、非易失内存。
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>存储级别</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>存储级别</p></figcaption></figure>
 
 由上到下表现为数据存储级别由高到低，数据访问速度 由快到慢，延迟时间由短到长。
 

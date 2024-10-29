@@ -1,5 +1,7 @@
 # 部署
 
+{% stepper %}
+{% step %}
 部署mds主机
 
 ```
@@ -13,9 +15,8 @@ ceph       14471  0.1  1.2 384316 22504 ?        Ssl  11:48   0:00 /u
 
 在没有为fs准备存储池的前提下，是看不到效果的
 
-```
-在admin主机上通过 ceph -s 中查看mds的状态
-[cephadm@admin ceph-cluster]$  ceph -s
+<pre class="language-bash"><code class="lang-bash"><strong># 在admin主机上查看mds的状态
+</strong>[cephadm@admin ceph-cluster]$  ceph -s
   cluster:
     ...
   services:
@@ -24,32 +25,34 @@ ceph       14471  0.1  1.2 384316 22504 ?        Ssl  11:48   0:00 /u
     mds:  1 up:standby      # 一个mds部署成功
     osd: 6 osds: 6 up (since 6m), 6 in (since 43h)
     rgw: 1 daemon active (stor04)
-```
+</code></pre>
 
-```
-需要专用的命令来进行查看mds的状态效果
+```bash
+# 需要专用的命令来进行查看mds的状态效果
 [cephadm@admin ceph-cluster]$ ceph mds stat
  1 up:standby
 ```
+{% endstep %}
 
+{% step %}
 创建专属存储池
 
-```
-创建元数据存储池
-ceph osd pool create cephfs-metadata 32 32
-ceph osd pool create cephfs-data 64 64
-```
+<pre class="language-bash"><code class="lang-bash"># 创建元数据存储池
+<strong>ceph osd pool create cephfs-metadata 32 32
+</strong>ceph osd pool create cephfs-data 64 64
+</code></pre>
 
-```
-将刚才创建的存储池组合为fs专属存储池
+```bash
+# 将刚才创建的存储池组合为fs专属存储池
 [cephadm@admin ceph-cluster]$ ceph fs new cephfs cephfs-metadata cephfs-data
 new fs with metadata pool 14 and data pool 15
 ```
+{% endstep %}
 
+{% step %}
 确认效果
 
-```
-确认效果
+```bash
 [cephadm@admin ceph-cluster]$ ceph -s
   cluster:
     ...
@@ -63,7 +66,6 @@ new fs with metadata pool 14 and data pool 15
 ```
 
 ```
-查看状态
 [cephadm@admin ceph-cluster]$ ceph fs status cephfs
 cephfs - 0 clients
 ======
@@ -84,3 +86,12 @@ cephfs - 0 clients
 +-------------+
 MDS version: ceph version 14.2.22 (ca74598065096e6fcbd8433c8779a2be0c889351) nautilus (stable)
 ```
+
+
+{% endstep %}
+{% endstepper %}
+
+
+
+
+

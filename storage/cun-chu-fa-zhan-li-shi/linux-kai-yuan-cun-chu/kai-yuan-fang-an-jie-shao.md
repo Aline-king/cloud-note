@@ -10,7 +10,7 @@ Linux开源存储的解决方案，包括Linux系统单节点的存储技术和�
 {% tab title="Linux本地文件系统" %}
 在Linux操作系统中，对于应用程序来讲，所有设备都是以“文件”的 形式使用的。例如，对于网络程序，打开一个socket，其实返回的是一个 文件描述符。如果不关注网络，只从一个应用程序的角度来看文件系 统，则Linux内核文件系统实现如图1-2所示。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 应用程序通过系统调用访问文件（无论是块设备文件，还是各种 文件系统中的文件）。可以通过open系统调用，也可以通过memory map 的方式调用来打开文件。
 
