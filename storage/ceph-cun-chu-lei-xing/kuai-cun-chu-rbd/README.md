@@ -1,6 +1,8 @@
-# Ceph块存储 RBD
+# 块存储 RBD
 
-Ceph块设备，也称为RADOS块设备（简称RBD），是一种基于RADOS存储系统支持超配（thin-provisioned）、可伸缩的条带化数据存储系统，它通过librbd库与OSD进行交互。
+Ceph块设备，也称为RADOS块设备（简称RBD），是一种基于RADOS存储系统支持超配（thin-provisioned）、可伸缩的条带化数据存储系统，
+
+基础库librados提供一系列的API允许用户操作对象和OSD、MON等进行通信。基于RADOS与librados库，Ceph通过RBD提供了一个标准的块设备接口，提供基于块设备的访问模式。
 
 RBD为KVM等虚拟化技术和云OS（如OpenStack和CloudStack）提供高性能和无限可扩展性的存储后端，这些系统依赖于libvirt和QEMU实用程序与RBD进行集成。
 
